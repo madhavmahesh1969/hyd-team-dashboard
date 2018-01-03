@@ -1,3 +1,5 @@
 <p>
   dashboard works!
+  {{tileData|json}}
+  <tile *ngFor="let tile of tileData" [tile_image]="tile.tile_image"></tile>
 </p>

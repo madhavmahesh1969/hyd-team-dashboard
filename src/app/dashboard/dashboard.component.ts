@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
+import { TilesDataService } from '../service/tiles-data.service';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  styleUrls: ['./dashboard.component.scss'],
+  providers: [TilesDataService]
 })
 export class DashboardComponent implements OnInit {
-
-  constructor() { }
+  tileData: any;
+  constructor(private tilesDataService: TilesDataService) { }
 
   ngOnInit() {
+    this.tilesDataService.getTileData().then(tileData => this.tileData = tileData);
   }
 
 }
