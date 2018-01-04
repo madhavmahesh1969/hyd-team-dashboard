@@ -1,0 +1,28 @@
+{
+    "data": [{
+        "tile_id": "T100",
+        "tile_image": "tcsGrowth",
+        "tile_title": "TCS Growth",
+        "tile_count": 10,
+        "tile_link": "tcsGrowth"
+    },
+    {
+        "tile_id": "T100",
+        "tile_image": "tcsGrowth",
+        "tile_title": "TCS Growth",
+        "tile_count": 10,
+        "tile_link": "tcsGrowth"
+    },{
+        "tile_id": "T100",
+        "tile_image": "tcsGrowth",
+        "tile_title": "TCS Growth",
+        "tile_count": 10,
+        "tile_link": "tcsGrowth"
+    },{
+        "tile_id": "T100",
+        "tile_image": "tcsGrowth",
+        "tile_title": "TCS Growth",
+        "tile_count": 10,
+        "tile_link": "tcsGrowth"
+    }]
+}
