@@ -5,6 +5,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { WeatherReportComponent } from './dashboard/weather-report/weather-report.component'
 
 
 
@@ -15,7 +16,11 @@ const appRoutes: Routes = [
   },
   {
     path: 'dashboard',
-    component: DashboardComponent
+    component: DashboardComponent,
+	children: [
+      {path: '', redirectTo: 'weatherreport', pathMatch: 'full'}, 
+      {path: 'weatherreport', component: WeatherReportComponent},      
+    ]
   }
 ];
 

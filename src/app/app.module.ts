@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TileComponent } from './tile/tile.component';
+import { WeatherReportComponent } from './dashboard/weather-report/weather-report.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TileComponent } from './tile/tile.component';
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    TileComponent
+    TileComponent,
+    WeatherReportComponent
   ],
   imports: [
     BrowserModule,
