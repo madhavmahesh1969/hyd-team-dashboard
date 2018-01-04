@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TilesDataService } from '../service/tiles-data.service';
+import { Routes, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',

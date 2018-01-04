@@ -1,5 +1,40 @@
-<p>
-  dashboard works!
-  {{tileData|json}}
-  <tile *ngFor="let tile of tileData" [tile_image]="tile.tile_image"></tile>
-</p>
+<nav role="navigation">
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input class="display-none" type="checkbox" />
+      
+      <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+      <span class="display-none"></span>
+      <span class="display-none"></span>
+      <span class="display-none"></span>
+      
+      <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+      <ul id="menu">
+        <a href="#"><li>Home</li></a>
+        <a href="#"><li>About</li></a>
+        <a href="#"><li>Info</li></a>
+        <a href="#"><li>Contact</li></a>
+        <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+      </ul>
+    </div>
+  </nav>
+  <div class="top-nav-bar">
+    <h1 class="title">TCS Dashboard</h1>
+    </div>
+<div class="dashboard">
+  <tile *ngFor="let tile of tileData" [tile_image]="tile.tile_image" [tile_count]="tile.tile_count" [tile_title]="tile.tile_title" [tile_link]="tile.tile_link"></tile>
+</div>
+<div class="routing-section">
+  <router-outlet></router-outlet>
+</div>
