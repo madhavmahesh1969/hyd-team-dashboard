@@ -12,6 +12,18 @@ import { TileComponent } from './components/tile/tile.component';
 import { WeatherReportComponent } from './components/dashboard/weather-report/weather-report.component';
 import { EmployeeDashboardComponent } from './components/employee-dashboard/employee-dashboard.component';
 import { ProjectGrowthComponent } from './components/project-growth/project-growth.component';
+import { FusionchartComponent } from './components/fusionchart/fusionchart.component';
+
+// Import angular2-fusioncharts
+import { FusionChartsModule } from 'angular2-fusioncharts';
+ 
+// Import FusionCharts library and chart modules
+import * as FusionCharts from 'fusioncharts';
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+import * as FintTheme from 'fusioncharts/themes/fusioncharts.theme.fint';
+ 
+// Pass the fusioncharts library and chart modules
+FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
 
 @NgModule({
   declarations: [
@@ -21,12 +33,14 @@ import { ProjectGrowthComponent } from './components/project-growth/project-grow
     TileComponent,
     WeatherReportComponent,
     EmployeeDashboardComponent,
-    ProjectGrowthComponent
+    ProjectGrowthComponent,
+    FusionchartComponent,
+    EmployeeDashboardComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
-    routes,
+    FusionChartsModule,
+	routes,
     HttpModule
   ],
   providers: [],
