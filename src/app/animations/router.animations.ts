@@ -45,8 +45,8 @@ function slideToLeft() {
 
 function slideToBottom() {
   return trigger('routerTransitionToBottom', [
-    state('void', style({position:'absolute', width:'100%', height:'100%', left:'260px'}) ),
-    state('*', style({position:'absolute', width:'100%', height:'100%', left:'260px'}) ),
+    state('void', style({position:'absolute', width:'100%', height:'100%'}) ),
+    state('*', style({position:'absolute', width:'100%', height:'100%'}) ),
     transition(':enter', [
       style({transform: 'translateY(-100%)'}),
       animate('0.5s ease-in-out', style({transform: 'translateY(0%)'}))
