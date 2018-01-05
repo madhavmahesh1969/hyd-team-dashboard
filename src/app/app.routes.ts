@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { WeatherReportComponent } from './dashboard/weather-report/weather-report.component'
-
+import { FusionchartComponent } from './fusionchart/fusionchart.component';
 
 
 const appRoutes: Routes = [
@@ -21,6 +21,10 @@ const appRoutes: Routes = [
       {path: '', redirectTo: 'weatherreport', pathMatch: 'full'}, 
       {path: 'weatherreport', component: WeatherReportComponent},      
     ]
+  },
+  {
+    path: 'fusionchart',
+    component: FusionchartComponent 
   }
 ];
 
