@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
     selector: 'employee-report',
     templateUrl: './fusionchart.component.html'
 })
-export class FusionchartComponent implements OnInit {
+export class FusionchartComponent {
   dataSource: Object;
   title: string;
  

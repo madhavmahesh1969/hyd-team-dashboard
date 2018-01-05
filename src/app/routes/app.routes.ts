@@ -8,6 +8,7 @@ import { WeatherReportComponent } from '../components/dashboard/weather-report/w
 import { EmployeeDashboardComponent } from '../components/employee-dashboard/employee-dashboard.component';
 import { ProjectGrowthComponent } from '../components/project-growth/project-growth.component';
 import { FusionchartComponent } from '../components/fusionchart/fusionchart.component';
+import { TemplateDrivenFormComponent } from '../components/template-driven-form/template-driven-form.component';
 
 const appRoutes: Routes = [
   {path: '', component: LoginComponent, pathMatch: 'full'},
@@ -17,7 +18,8 @@ const appRoutes: Routes = [
         {path: 'weatherreport', component: WeatherReportComponent},
         {path: 'employee', component: EmployeeDashboardComponent},
         {path: 'projectGrowth', component: ProjectGrowthComponent},
-        {path: 'fusionchart', component: FusionchartComponent}
+        {path: 'fusionchart', component: FusionchartComponent},
+        {path: 'signup', component: TemplateDrivenFormComponent}
       ]
   }
 ];
