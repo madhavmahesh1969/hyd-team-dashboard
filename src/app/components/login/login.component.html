@@ -1,4 +1,27 @@
-<div class="login">
-    Login
-
+<div class="paid-user-form">
+    <form novalidate [formGroup]="user" (ngSubmit)="onSubmit()">
+        <label>
+          <!-- <span>Full name</span> -->
+          <input  class="input" type="text" placeholder="Your full name" formControlName="name">
+            <!-- name -->
+            <div class="error" *ngIf="user.get('name').hasError('required') && user.get('name').touched">
+              Name is required
+            </div>
+            <div class="error" *ngIf="user.get('name').hasError('minlength') && user.get('name').touched">
+              Minimum of 2 characters
+            </div>
+        </label>
+        <label>
+          <!-- <span>Full name</span> -->
+          <input  class="input" type="text" placeholder="Your full name" formControlName="name">
+            <!-- name -->
+            <div class="error" *ngIf="user.get('name').hasError('required') && user.get('name').touched">
+              Name is required
+            </div>
+            <div class="error" *ngIf="user.get('name').hasError('minlength') && user.get('name').touched">
+              Minimum of 2 characters
+            </div>
+        </label>
+        <button class="submit" type="submit">Log In</button>
+    </form>
 </div>

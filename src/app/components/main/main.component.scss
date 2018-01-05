@@ -1,16 +1,19 @@
-.login-component{
+.login-component {
     display: block;
     margin: 10px;
-    border: 1px solid black;
+    //border: 1px solid black;
     height: 80vh;
     @media (min-width: 768px) {
+        float: right;
         margin: 60px;
+        width: 35%;
     }
-    .login-links{
+    .login-links {
         background: grey;
         display: block;
         overflow: auto;
-        .arrow-up{
+        border-radius: 4px;
+        .arrow-up {
             position: relative;
             height: 0;
             width: 1%;
@@ -21,7 +24,7 @@
             //position: absolute;
             top: 10px;
         }
-        .tile-link{
+        .tile-link {
             float: left;
             padding: 10px;
             width: 25%;
@@ -35,6 +38,7 @@
         }
     }
 }
+
 .display-none {
     display: none;
 }

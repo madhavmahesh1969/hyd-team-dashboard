@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TilesDataService } from '../../service/tiles-data.service';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, Router } from '@angular/router';
 import { routerTransitionToBottom } from '../../animations/router.animations';
 
 @Component({
@@ -13,10 +13,13 @@ import { routerTransitionToBottom } from '../../animations/router.animations';
 })
 export class DashboardComponent implements OnInit {
   tileData: any;
-  constructor(private tilesDataService: TilesDataService) { }
+  constructor(private tilesDataService: TilesDataService, private router:Router) { }
+  
 
   ngOnInit() {
     this.tilesDataService.getTileData().then(tileData => this.tileData = tileData);
   }
-
+  navigateToMainPage(){
+    this.router.navigate(['main']);
+  }
 }

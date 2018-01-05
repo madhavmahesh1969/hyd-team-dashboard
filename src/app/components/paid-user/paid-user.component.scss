@@ -7,25 +7,26 @@
 //         display: table-cell; 
 //         vertical-align: middle;
 //         text-align: center;
-        .paid-user-form {
-            width: 99%;
-            @media (min-width: 768px) {
-                margin: 0 auto;
-                width: 35%;
-            }
-            .input, .submit{
-                width: 99%;
-                height: 30px;
-                margin-top: 10px;
-                font: {
-                    size: 20px;
-                }
-
-            }
-            .submit{
-                width: 100%;
-                height: 40px;
-            }
+.paid-user-form {
+    width: 99%;
+    @media (min-width: 768px) {
+        margin: 0 auto;
+        //width: 100%;
+    }
+    .input,
+    .submit {
+        width: 99%;
+        height: 30px;
+        margin-top: 10px;
+        font: {
+            size: 20px;
         }
+    }
+    .submit {
+        width: 100%;
+        height: 40px;
+    }
+}
+
 //     }
 // }
