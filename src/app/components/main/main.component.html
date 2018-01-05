@@ -1,7 +1,17 @@
 <div class="login-component">
     <div class="login-links">
-        <div class="tile-link"><a routerLink="dashboard">Login</a></div>
-        <div class="tile-link"><a routerLink="paidUser">Paid user</a></div>
-        <div class="tile-link"><a routerLink="paidUser">Free user</a></div>
+        <div class="tile-link">
+            <a routerLink="login" (click)="getCurrentLocation('/main/login')">Login</a>
+            <div class="arrow-up login" *ngIf = "location == '/main/login' "></div>
+        </div>
+        <div class="tile-link">
+            <a routerLink="paidUser" (click)="getCurrentLocation('/main/paidUser')">Paid user</a>
+            <div class="arrow-up paidUser" *ngIf = "location == '/main/paidUser' "></div>
+        </div>
+        <div class="tile-link">
+            <a routerLink="freeUser" (click)="getCurrentLocation('/main/freeUser')">Free user</a>
+            <div class="arrow-up freeUser" *ngIf = "location == '/main/freeUser' "></div>
+        </div>
     </div>
+    <router-outlet></router-outlet>
 </div>

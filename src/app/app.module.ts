@@ -13,6 +13,8 @@ import { WeatherReportComponent } from './components/dashboard/weather-report/we
 import { EmployeeDashboardComponent } from './components/employee-dashboard/employee-dashboard.component';
 import { ProjectGrowthComponent } from './components/project-growth/project-growth.component';
 import { FusionchartComponent } from './components/fusionchart/fusionchart.component';
+import { FormsModule } from '@angular/forms';
+import { TemplateDrivenFormComponent } from './components/template-driven-form/template-driven-form.component';
 
 // Import angular2-fusioncharts
 import { FusionChartsModule } from 'angular2-fusioncharts';
@@ -39,7 +41,8 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
     FusionchartComponent,
     EmployeeDashboardComponent,
     PaidUserComponent,
-    MainComponent
+    MainComponent,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
     FusionChartsModule,
     routes,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

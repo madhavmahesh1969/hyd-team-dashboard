@@ -1,12 +1,12 @@
-.paid-user-page{
-    display: table; 
-    position: absolute;
-    height: 100%; 
-    width: 100%;
-    .paid-user-title{
-        display: table-cell; 
-        vertical-align: middle;
-        text-align: center;
+// .paid-user-page{
+//     display: table; 
+//     position: absolute;
+//     height: 100%; 
+//     width: 100%;
+//     .paid-user-title{
+//         display: table-cell; 
+//         vertical-align: middle;
+//         text-align: center;
         .paid-user-form {
             width: 99%;
             @media (min-width: 768px) {
@@ -27,5 +27,5 @@
                 height: 40px;
             }
         }
-    }
-}
+//     }
+// }

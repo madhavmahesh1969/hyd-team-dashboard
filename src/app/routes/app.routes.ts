@@ -10,20 +10,31 @@ import { ProjectGrowthComponent } from '../components/project-growth/project-gro
 import { FusionchartComponent } from '../components/fusionchart/fusionchart.component';
 import { PaidUserComponent } from '../components/paid-user/paid-user.component';
 import { MainComponent } from '../components/main/main.component';
+import { TemplateDrivenFormComponent } from '../components/template-driven-form/template-driven-form.component';
 
 const appRoutes: Routes = [
-  {path: '', component: MainComponent, pathMatch: 'full'},
+  {path: '', redirectTo: 'main', pathMatch: 'full'},
+  {path: 'main', component: MainComponent,
+    children: [
+      {path: '', redirectTo: 'paidUser', pathMatch: 'full'},
+      {path: 'login', component: LoginComponent},
+      {path: 'paidUser', component: PaidUserComponent},
+      {path: 'freeUser', component: TemplateDrivenFormComponent}
+    ]
+  },
   {path: 'dashboard', component: DashboardComponent,
     children: [
-          {path: '', redirectTo: 'employee', pathMatch: 'full'}, 
-          {path: 'weatherreport', component: WeatherReportComponent},
-          {path: 'employee', component: EmployeeDashboardComponent},
-          {path: 'projectGrowth', component: ProjectGrowthComponent},
-          {path: 'fusionchart', component: FusionchartComponent}
-        ]
+      {path: '', redirectTo: 'employee', pathMatch: 'full'}, 
+      {path: 'weatherreport', component: WeatherReportComponent},
+      {path: 'employee', component: EmployeeDashboardComponent},
+      {path: 'projectGrowth', component: ProjectGrowthComponent},
+      {path: 'fusionchart', component: FusionchartComponent}
+    ]
   },
-  {path: 'login', component: LoginComponent},
-  {path: 'paidUser', component: PaidUserComponent}
+  { path: '**', redirectTo: '' }
+  // {path: 'login', component: LoginComponent},
+  // {path: 'paidUser', component: PaidUserComponent},
+  // {path: 'freeUser', component: TemplateDrivenFormComponent}
 ];
 
 export const routes: ModuleWithProviders =RouterModule.forRoot(appRoutes);
