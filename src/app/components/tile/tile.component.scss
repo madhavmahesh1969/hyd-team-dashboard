@@ -17,6 +17,10 @@
         width: 44%;
     }
     @media (min-width: 1024px) {
+        //width: 21%;
+        margin-right: 35px;
+    }
+    @media (min-width: 1440px) {
         width: 21%;
         margin-right: 35px;
     }
@@ -50,6 +54,7 @@
             }
         }
         .tile-image{
+            width: 27%;
             padding: {
                 left: 10px;
                 top: 10px;

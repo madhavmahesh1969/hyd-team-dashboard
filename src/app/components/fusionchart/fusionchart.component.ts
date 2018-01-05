@@ -1,16 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 // Import FusionCharts library and chart modules
 import * as FusionCharts from 'fusioncharts';
 import * as Charts from 'fusioncharts/fusioncharts.charts';
 import * as FintTheme from 'fusioncharts/themes/fusioncharts.theme.fint';
 
-import { Component } from '@angular/core';
-
 @Component({
     selector: 'employee-report',
     templateUrl: './fusionchart.component.html'
 })
-export class FusionchartComponent implements OnInit {
+export class FusionchartComponent {
   dataSource: Object;
   title: string;
  

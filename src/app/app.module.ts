@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { routes } from './routes/app.routes';
 
 import { AppComponent } from './app.component';
@@ -21,6 +21,8 @@ import { FusionChartsModule } from 'angular2-fusioncharts';
 import * as FusionCharts from 'fusioncharts';
 import * as Charts from 'fusioncharts/fusioncharts.charts';
 import * as FintTheme from 'fusioncharts/themes/fusioncharts.theme.fint';
+import { PaidUserComponent } from './components/paid-user/paid-user.component';
+import { MainComponent } from './components/main/main.component';
  
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
@@ -35,12 +37,16 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
     EmployeeDashboardComponent,
     ProjectGrowthComponent,
     FusionchartComponent,
-    EmployeeDashboardComponent
+    EmployeeDashboardComponent,
+    PaidUserComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FusionChartsModule,
-	routes,
+    routes,
+    ReactiveFormsModule,
     HttpModule
   ],
   providers: [],

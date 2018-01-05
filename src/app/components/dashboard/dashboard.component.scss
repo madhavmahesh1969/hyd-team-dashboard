@@ -240,15 +240,15 @@ a:hover
     overflow: auto;
     display: block;
     @media (min-width: 768px) {
-      overflow: unset;
+      //overflow: auto;
       padding: 0;
       margin-left: 250px;
-      height: 120px;
+      //height: 120px;
     }
     @media (min-width: 1024px) {
         padding: 10px;
         margin-left: 250px;
-        height: 120px;
+        //height: 120px;
     }
 }
 .display-none {
