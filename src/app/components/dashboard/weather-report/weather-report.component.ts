@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
-
+import { routerTransitionToLeft } from '../../../animations/router.animations';
 // Load the exporting module.
 import * as Exporting from 'highcharts/modules/exporting';
 // Initialize exporting module.
@@ -9,7 +9,9 @@ Exporting(Highcharts);
 @Component({
   selector: 'app-weather-report',
   templateUrl: './weather-report.component.html',
-  styleUrls: ['./weather-report.component.scss']
+  styleUrls: ['./weather-report.component.scss'],
+  animations: [routerTransitionToLeft()],
+  host: {'[@routerTransitionToLeft]': ''}
 })
 export class WeatherReportComponent implements OnInit {
   mychart:any;
@@ -46,7 +48,7 @@ export class WeatherReportComponent implements OnInit {
             ]
         }],
 		chart: {
-			type: 'bar'			
+			type: 'line'			
 		}		// options - see https://api.highcharts.com/highcharts
 		  
 		});
