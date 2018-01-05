@@ -11,6 +11,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TileComponent } from './components/tile/tile.component';
 import { WeatherReportComponent } from './components/dashboard/weather-report/weather-report.component';
 import { EmployeeDashboardComponent } from './components/employee-dashboard/employee-dashboard.component';
+import { ProjectGrowthComponent } from './components/project-growth/project-growth.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EmployeeDashboardComponent } from './components/employee-dashboard/empl
     DashboardComponent,
     TileComponent,
     WeatherReportComponent,
-    EmployeeDashboardComponent
+    EmployeeDashboardComponent,
+    ProjectGrowthComponent
   ],
   imports: [
     BrowserModule,

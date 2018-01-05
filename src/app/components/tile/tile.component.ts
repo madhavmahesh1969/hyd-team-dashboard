@@ -16,6 +16,8 @@ export class TileComponent implements OnInit {
   tile_id;
   @Input()
   tile_link;
+  @Input()
+  tile_background;
 
   constructor() { }
 

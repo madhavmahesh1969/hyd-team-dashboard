@@ -237,7 +237,10 @@ a:hover
 .dashboard {
     padding: 15px;
     margin-left: 0px;
+    overflow: auto;
+    display: block;
     @media (min-width: 768px) {
+      overflow: unset;
       padding: 0;
       margin-left: 250px;
       height: 120px;
@@ -256,8 +259,10 @@ a:hover
 }
 
 .routing-section {
-  margin-left: 0;
+  position: relative;
+  //margin-left: -250px;
   @media (min-width: 720px) {
+    position: none;
     margin-left: 250px;
   }
 }

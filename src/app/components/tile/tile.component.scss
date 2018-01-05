@@ -23,7 +23,7 @@
     //background: white;
     // padding: 10px 10px 0 10px;
     .upper-section {
-        background: #337ab7;
+        //background: #bfca23;
         border-bottom: 2px solid grey;
         height: 75px;
         color: white;
@@ -38,8 +38,9 @@
             }
         }
         .tile-title{
+            margin-top: 10px;
             font: {
-                size: 32px;
+                size: 20px;
                 weight: bold;
             }
             @media (min-width: 720px) {
