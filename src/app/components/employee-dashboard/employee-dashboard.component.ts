@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { routerTransitionToRight } from '../animations/router.animations';
+import { routerTransitionToRight } from '../../animations/router.animations';
 
 @Component({
   selector: 'app-employee-dashboard',

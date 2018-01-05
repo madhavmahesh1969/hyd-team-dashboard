@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
-import { routerTransitionToLeft } from '../../animations/router.animations';
+import { routerTransitionToLeft } from '../../../animations/router.animations';
 // Load the exporting module.
 import * as Exporting from 'highcharts/modules/exporting';
 // Initialize exporting module.
