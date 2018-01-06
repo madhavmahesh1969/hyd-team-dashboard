@@ -13,17 +13,18 @@
     width: 100%;
     height: auto;
     /* Set up positioning */
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     @media screen and (min-width: 768px) {
         /* Specific to this particular image */
-        left: 50%;
-        margin-left: -512px;
+        // left: 50%;
+        // margin-left: -512px;
         min-width: 1024px;
         /* 50% */
     }
-    .advertisement {
+    .advertisement,
+    .advertisement-info {
         margin-top: 60px;
         display: block;
         width: 99%;
@@ -31,15 +32,57 @@
         overflow: auto;
         float: none;
         text-align: center;
+        color: white;
         @media screen and (min-width: 768px) {
             float: left;
             width: 60%;
         }
         .title {
-            color: white;
             font: {
                 size: 46px;
                 family: Above;
+            }
+        }
+    }
+    .advertisement-info {
+        opacity: 0.5;
+        margin: {
+            top: 10px;
+        }
+        color: white;
+        float: none;
+        width: 100%;
+        filter: alpha(opacity=50);
+        background-color: rgba(21,
+        16,
+        16,
+        0.4);
+        /* For IE8 and earlier */
+        text-align: left;
+        ul {
+            //list-style-type: none;
+            li {
+                font: {
+                    size: 18px;
+                    family: Above;
+                }
+            }
+        }
+        @media screen and (min-width: 768px) {
+            margin: {
+                top: 10px;
+                left: 20px;
+            }
+            float: left;
+            width: 55%;
+            ul {
+                //list-style-type: none;
+                li {
+                    font: {
+                        size: 32px;
+                        family: Above;
+                    }
+                }
             }
         }
     }
@@ -50,13 +93,13 @@
         height: 80vh;
         @media (min-width: 768px) {
             float: right;
-            margin: 60px;
+            margin: 34px;
             width: 35%;
         }
         .login-links {
             background: grey;
             display: block;
-            overflow: auto;
+            overflow: hidden;
             border-radius: 4px;
             .arrow-up {
                 position: relative;
