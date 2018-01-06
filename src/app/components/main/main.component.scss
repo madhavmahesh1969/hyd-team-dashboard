@@ -1,44 +1,97 @@
-.login-component {
-    display: block;
-    margin: 10px;
-    //border: 1px solid black;
-    height: 80vh;
-    @media (min-width: 768px) {
-        float: right;
-        margin: 60px;
-        width: 35%;
-    }
-    .login-links {
-        background: grey;
-        display: block;
-        overflow: auto;
-        border-radius: 4px;
-        .arrow-up {
-            position: relative;
-            height: 0;
-            width: 1%;
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-bottom: 15px solid #ECF0F1;
-            left: 10%;
-            //position: absolute;
-            top: 10px;
-        }
-        .tile-link {
-            float: left;
-            padding: 10px;
-            width: 25%;
-            font: {
-                size: 18px;
-            }
-            a {
-                text-decoration: none;
-                color: white;
-            }
-        }
-    }
+@font-face {
+    font-family: "Above";
+    src: url("../../../assets/fonts/ABOVE.ttf") format("ttf");
 }
 
-.display-none {
-    display: none;
+.main-page {
+    //background-image: url("../../../assets/images/Website-Design-Background.png");
+    background: url("../../../assets/images/Website-Design-Background.png") no-repeat center center fixed;
+    /* Set rules to fill background */
+    min-height: 100%;
+    //min-width: 1024px;
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+    @media screen and (min-width: 768px) {
+        /* Specific to this particular image */
+        left: 50%;
+        margin-left: -512px;
+        min-width: 1024px;
+        /* 50% */
+    }
+    .advertisement {
+        margin-top: 60px;
+        display: block;
+        width: 99%;
+        //border: 1px solid black;
+        overflow: auto;
+        float: none;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            float: left;
+            width: 60%;
+        }
+        .title {
+            color: white;
+            font: {
+                size: 46px;
+                family: Above;
+            }
+        }
+    }
+    .login-component {
+        display: block;
+        margin: 10px;
+        //border: 1px solid black;
+        height: 80vh;
+        @media (min-width: 768px) {
+            float: right;
+            margin: 60px;
+            width: 35%;
+        }
+        .login-links {
+            background: grey;
+            display: block;
+            overflow: auto;
+            border-radius: 4px;
+            .arrow-up {
+                position: relative;
+                // height: 0;
+                // width: 1%;
+                // border-left: 20px solid transparent;
+                // border-right: 20px solid transparent;
+                // border-bottom: 15px solid #ECF0F1;
+                height: 9%;
+                width: 1%;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-bottom: 29px solid #ECF0F1;
+                left: 30%;
+                //position: absolute;
+                top: 10px;
+            }
+            .tile-link {
+                float: left;
+                padding: {
+                    top: 12px;
+                }
+                font: {
+                    size: 20px;
+                }
+                width: 33%;
+                text-align: center;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+    .display-none {
+        display: none;
+    }
 }

@@ -16,7 +16,7 @@ const appRoutes: Routes = [
   {path: '', redirectTo: 'main', pathMatch: 'full'},
   {path: 'main', component: MainComponent,
     children: [
-      {path: '', redirectTo: 'paidUser', pathMatch: 'full'},
+      {path: '', redirectTo: 'login', pathMatch: 'full'},
       {path: 'login', component: LoginComponent},
       {path: 'paidUser', component: PaidUserComponent},
       {path: 'freeUser', component: TemplateDrivenFormComponent}

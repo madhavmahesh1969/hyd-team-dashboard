@@ -126,7 +126,7 @@ a:hover {
 #menuToggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: white;
 }
 
 
@@ -157,10 +157,11 @@ a:hover {
 #menu {
     position: absolute;
     width: 250px;
-    margin: -100px 0 0 -58px;
+    //margin: -100px 0 0 -58px;
+    margin: 15px 0 0 -10px;
     height: 100vh;
     //padding: 50px;
-    padding-top: 125px;
+    //padding-top: 125px;
     background: black;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;

@@ -4,7 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-template-driven-signup-form',
-  templateUrl: './template-driven-form.component.html'
+  templateUrl: './template-driven-form.component.html',
+  styleUrls: ['./template-driven-form.component.scss']
 })
 
 export class TemplateDrivenFormComponent {

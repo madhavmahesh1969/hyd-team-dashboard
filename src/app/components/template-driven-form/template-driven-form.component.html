@@ -1,27 +1,27 @@
 <div class="paid-user-form">
     <form #form="ngForm" (ngSubmit)="submit(form.value)">
+        <label>
+            <!--<label>Firstname:</label>-->
+        <input class="input" type="text" name="firstname" ngModel placeholder="Firstname">
+        </label>
         <div>
-            <label>Firstname:</label>
-            <input type="text" name="firstname" ngModel>
+            <!--<label>Lastname:</label>-->
+            <input class="input" type="text" name="lastname" ngModel placeholder="Lastname">
         </div>
         <div>
-            <label>Lastname:</label>
-            <input type="text" name="lastname" ngModel>
+            <!--<label>Street:</label>-->
+            <input class="input" type="text" name="street" ngModel placeholder="Street">
         </div>
         <div>
-            <label>Street:</label>
-            <input type="text" name="street" ngModel>
+            <!--<label>Zip:</label>-->
+            <input class="input" type="text" name="zip" ngModel placeholder="Zip">
         </div>
         <div>
-            <label>Zip:</label>
-            <input type="text" name="zip" ngModel>
-        </div>
-        <div>
-            <label>City:</label>
-            <input type="text" name="city" ngModel>
+            <!--<label>City:</label>-->
+            <input class="input" type="text" name="city" ngModel placeholder="City">
         </div>
 
-        <button type="submit">Submit</button>
+        <button class="submit" type="submit">Submit</button>
     </form>
 
     <!--<pre>
