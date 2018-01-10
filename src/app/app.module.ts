@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { routes } from './routes/app.routes';
 
+import { ChartsModule } from 'ng2-charts';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -48,6 +49,7 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme);
     BrowserModule,
     BrowserAnimationsModule,
     FusionChartsModule,
+    ChartsModule,
     routes,
     ReactiveFormsModule,
     HttpModule,

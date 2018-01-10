@@ -1,32 +1,33 @@
 {
     "data": [{
-        "tile_id": "T100",
-        "tile_image": "pie-chart.svg",
-        "tile_title": "TCS Growth",
-        "tile_count": 100,
-        "tile_link": "employee",
-        "tile_background": "#337ab7"
-    },
-    {
-        "tile_id": "T100",
-        "tile_image": "bar-chart.svg",
-        "tile_title": "Employee Growth",
-        "tile_count": 1000,
-        "tile_link": "weatherreport",
-        "tile_background": "#198819"
-    },{
-        "tile_id": "T100",
-        "tile_image": "pie-chart-latest.svg",
-        "tile_title": "Technical Growth",
-        "tile_count": 500,
-        "tile_link": "projectGrowth",
-        "tile_background": "#ca5823"
-    },{
-        "tile_id": "T100",
-        "tile_image": "sine-curve.svg",
-        "tile_title": "Project Growth",
-        "tile_count": 1200,
-        "tile_link": "fusionchart",
-        "tile_background": "#bfca23"
-    }]
+            "tile_id": "T100",
+            "tile_image": "pie-chart.svg",
+            "tile_title": "TCS Growth",
+            "tile_count": 100,
+            "tile_link": "weatherreport",
+            "tile_background": "#337ab7"
+        },
+        {
+            "tile_id": "T100",
+            "tile_image": "bar-chart.svg",
+            "tile_title": "Employee Growth",
+            "tile_count": 1000,
+            "tile_link": "employee",
+            "tile_background": "#198819"
+        }, {
+            "tile_id": "T100",
+            "tile_image": "pie-chart-latest.svg",
+            "tile_title": "Technical Growth",
+            "tile_count": 500,
+            "tile_link": "fusionchart",
+            "tile_background": "#ca5823"
+        }, {
+            "tile_id": "T100",
+            "tile_image": "sine-curve.svg",
+            "tile_title": "Project Growth",
+            "tile_count": 1200,
+            "tile_link": "projectGrowth",
+            "tile_background": "#bfca23"
+        }
+    ]
 }
