@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef,
+  ChangeDetectionStrategy } from '@angular/core';
 import { routerTransitionToRight } from '../../animations/router.animations';
 
 @Component({
   selector: 'app-employee-dashboard',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './employee-dashboard.component.html',
   styleUrls: ['./employee-dashboard.component.scss'],
   animations: [routerTransitionToRight()],
@@ -10,9 +12,12 @@ import { routerTransitionToRight } from '../../animations/router.animations';
 })
 export class EmployeeDashboardComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private ref: ChangeDetectorRef) { }
+ngOnInit() {
+    this.graph = this.d3Service.getForceDirectedGraph(...);
+    this.graph.ticker.subscribe((d) => {
+      this.ref.markForCheck();
+    });
   }
 
 }
